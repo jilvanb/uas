@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1,0">
+        <title>My List</title>
+        <link rel="stylesheet" href="./css/style.css">
+        <link rel="stylesheet" href="./css/lightslider.css">
+        <!--js-link-->
+        <script src="js/JQuery3.3.1.js"></script>
+        <script src="js/lightslider.js"></script>
+        <!--fav icon-->
+        <link rel="shortcut icon" href="./images/fav icon.png">
+        <!--menggunakan font awesome-->
+        <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+    </head>
+
+        <body>
+        <!--navigation-->
+            <nav>
+        <!--logo-->
+                <a href="#" class="logo">
+                    <img src="./images/logo.png">
+                </a>
+        <!--menu-btn-->
+        <input type="checkbox" class="menu-btn" id="menu-btn"/>
+        <label class="menu-icon" for="menu-btn">
+            <span class="nav-icon"></span>
+        </label>
+        <!--menu-->
+                <ul class="menu">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="movies.html">Movies</a></li>
+                    <li><a href="series.html">Series</a></li>
+                    <li><a href="mylist.html">My List</a></li>
+                    <li><a href="#">Download</a></li>
+                    <li><a href="index.html">Logout</a></li>
+                </ul>
+        <!--search-->
+                <div class="search">
+                    <input type="text" placeholder="Titles, People, Genres"/>
+        <!--search icon-->
+                    <i class="fas fa-search"></i>
+                </div>
+            </nav>
+            <section id="main">
+        <!--showcase-->
+        <!--heading-->
+                
+			
+        <!--movies-->
+        <div class="movies-heading">
+            <h2>My List</h2>
+        </div>
+        <section id="movies-list">
+            <!--box-1-->
+            <div class="movies-box">
+                <!--img-->
+                <div class="movies-img">
+                    <div class="quality">HDR</div>
+                    <img src="./images/marvel.jpg">
+                </div>
+                <!--text-->
+                <a href="https://www.youtube.com/watch?v=0LHxvxdRnYc">
+                    Captain Marvel <br> (Action, Sci-Fi)
+                </a>
+            </div>
+            <!--box-2-->
+            <div class="movies-box">
+                <!--img-->
+                <div class="movies-img">
+                    <div class="quality">HDR</div>
+                    <img src="./images/duagaris1.jpg">
+                </div>
+                <!--text-->
+                <a href="https://www.youtube.com/watch?v=b0NS7FP1loU">
+                    Dua Garis Biru<br> (Drama, Romance)
+                </a>
+            </div>
+            <!--box-3-->
+            <div class="movies-box">
+                <!--img-->
+                <div class="movies-img">
+                    <div class="quality">HDR</div>
+                    <img src="./images/toy.jpeg">
+                </div>
+                <!--text-->
+                <a href="https://www.youtube.com/watch?v=wmiIUN-7qhE">
+                    Toy Story 4<br> (Kids)
+                </a>
+            </div>
+            <!--box-4-->
+            <div class="movies-box">
+                <!--img-->
+                <div class="movies-img">
+                    <div class="quality">HDR</div>
+                    <img src="./images/thenun.jpg">
+                </div>
+                <!--text-->
+                <a href="https://www.youtube.com/watch?v=pzD9zGcUNrw">
+                    The Nun<br> (Horror)
+                </a>
+            </div>
+            <!--box-5-->
+            <div class="movies-box">
+                <!--img-->
+                <div class="movies-img">
+                    <div class="quality">HDR</div>
+                    <img src="./images/money.jpg">
+                </div>
+                <!--text-->
+                <a href="https://www.youtube.com/watch?v=p_PJbmrX4uk">
+                    Money Heist <br> (Action, Drama)
+                </a>
+            </div>
+            <!--box-6-->
+            <div class="movies-box">
+                <!--img-->
+                <div class="movies-img">
+                    <div class="quality">HDR</div>
+                    <img src="./images/endgame.jpg">
+                </div>
+                <!--text-->
+                <a href="https://www.youtube.com/watch?v=TcMBFSGVi1c">
+                    Avengers : Endgame<br> (Action, Sci-Fi)
+                </a>
+            </div>
+        </section>
+        <!--btns-->
+        <div class="btns">
+            <a href="#">Previous</a>
+            <a href="#">Next</a>
+        </div>
+        <!--footer-->
+        <footer>
+            <p>Going To Internet, PRODITING, Inc.</p>
+            <p>Copyright 2020 - Kolbox</p>
+        </footer>
+
+
+
+
+
+        <!--slider-script-->
+        <script>
+              $(document).ready(function() {
+        $('#autoWidth,#autoWidth2').lightSlider({
+            autoWidth:true,
+            loop:true,
+            
+            onSliderLoad: function() {
+                $('#autoWidth,#autoWidth2').removeClass('cS-hidden');
+            }
+        });
+            });
+        </script>
+        </body>
+</html>
